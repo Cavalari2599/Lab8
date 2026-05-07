@@ -68,14 +68,14 @@ header h1 {
 }
 
 .episode {
-  --size: 2rem;
+  --size: 2.6rem;
   width: var(--size);
   height: var(--size);
   background: var(--color);
   display: grid;
   place-items: center;
   border-radius: 25px;
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   font-weight: bold;
   flex-shrink: 0;
 }
