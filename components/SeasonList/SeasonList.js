@@ -1,6 +1,7 @@
 const createEpisodeHTML = (episode) => {
-  const rating = Math.round(episode.rating) || 0;
-  return `<div class="episode episode-${episode.number} rating-${rating}" title="E${episode.number}">${rating}</div>`;
+  const rating = episode.rating ?? 0;
+  const ratingRounded = Math.round(rating) || 0;
+  return `<div class="episode episode-${episode.number} rating-${ratingRounded}" title="E${episode.number}">${rating || "?"}</div>`;
 };
 
 const createSeasonHTML = (data, number) => {
